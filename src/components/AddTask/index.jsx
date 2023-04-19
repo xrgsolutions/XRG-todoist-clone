@@ -6,7 +6,7 @@ const AddTask = () => {
 
   return (
     <>
-      <Modal opened={true} onClose={close} withCloseButton={false}>
+      <Modal opened={opened} onClose={close} withCloseButton={false}>
         <TextInput placeholder="Task Name" label="Add Task" />
         <Flex gap="xs" justify="center" align="center" direction="row">
           <Button>Cancel</Button>
