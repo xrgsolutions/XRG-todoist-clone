@@ -1,5 +1,5 @@
 import { useDisclosure } from '@mantine/hooks';
-import { Modal, Button, Group, TextInput, Flex } from '@mantine/core';
+import { Modal, Button, Group, TextInput, Flex, Space } from '@mantine/core';
 
 const AddTask = () => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -8,6 +8,7 @@ const AddTask = () => {
     <>
       <Modal opened={opened} onClose={close} withCloseButton={false}>
         <TextInput placeholder="Task Name" label="Add Task" />
+        <Space h="md" />
         <Flex gap="xs" justify="center" align="center" direction="row">
           <Button>Cancel</Button>
           <Button>Submit</Button>
