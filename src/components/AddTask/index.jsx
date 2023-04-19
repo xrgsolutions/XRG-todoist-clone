@@ -24,7 +24,7 @@ const AddTask = ({ onAdd }) => {
         />
         <Space h="md" />
         <Flex gap="xs" justify="center" align="center" direction="row">
-          <Button>Cancel</Button>
+          <Button onClick={close}>Cancel</Button>
           <Button onClick={onSubmit}>Submit</Button>
         </Flex>
       </Modal>

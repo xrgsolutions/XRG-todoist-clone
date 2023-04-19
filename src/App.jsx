@@ -10,10 +10,20 @@ function App() {
     setTasks([...tasks, taskToAdd]);
   };
 
+  const deleteTaskFromTasks = (taskToDelete) => {
+    setTasks(tasks.filter((task) => task != taskToDelete));
+  };
+
   return (
     <Layout addTask={<AddTask onAdd={addTaskToTasks} />}>
       {tasks.map((task) => (
-        <p key={task}>{task}</p>
+        <p
+          style={{ cursor: 'pointer' }}
+          onClick={() => deleteTaskFromTasks(task)}
+          key={task}
+        >
+          {task}
+        </p>
       ))}
     </Layout>
   );
