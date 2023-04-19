@@ -11,7 +11,7 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 
-export default function Layout({ children }) {
+export default function Layout({ children, addTask }) {
   const theme = useMantineTheme();
   const [opened, setOpened] = useState(false);
   return (
@@ -57,6 +57,8 @@ export default function Layout({ children }) {
             </MediaQuery>
 
             <Text>Todoist Clone</Text>
+
+            {addTask()}
           </div>
         </Header>
       }
