@@ -44,7 +44,12 @@ export default function Layout({ children, addTask }) {
       header={
         <Header height={{ base: 50, md: 70 }} p="md">
           <div
-            style={{ display: 'flex', alignItems: 'center', height: '100%' }}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              height: '100%',
+            }}
           >
             <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
               <Burger
