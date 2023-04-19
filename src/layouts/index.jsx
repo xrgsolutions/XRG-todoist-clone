@@ -38,7 +38,7 @@ export default function Layout() {
       }
       footer={
         <Footer height={60} p="md">
-          Application footer
+          YHR
         </Footer>
       }
       header={
@@ -56,7 +56,7 @@ export default function Layout() {
               />
             </MediaQuery>
 
-            <Text>Application header</Text>
+            <Text>Todoist Clone</Text>
           </div>
         </Header>
       }
