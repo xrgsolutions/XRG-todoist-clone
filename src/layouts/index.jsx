@@ -63,7 +63,7 @@ export default function Layout({ children, addTask }) {
 
             <Text>Todoist Clone</Text>
 
-            {addTask()}
+            {addTask}
           </div>
         </Header>
       }
